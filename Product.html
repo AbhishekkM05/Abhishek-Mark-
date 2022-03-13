@@ -6,6 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Product Landing</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #eee;
+            font-family: 'Lato', sans-serif;
+        }
+
+        #header {
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 100px;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        nav {
+            width: 15%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        li {
+            display: block;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-style: bold;
+            padding: 10px;
+            background: red;
+            cursor: pointer;
+            border-radius: 5px;
+
+
+        }
+
+        nav ul li a:hover {
+            background: yellow;
+        }
+
+        section {
+
+            text-align: center;
+            margin: 50px 50px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        @media (max-width: 600px) {
+            header {
+                flex-wrap: wrap;
+                text-align: center;
+                height: auto !important;
+            }
+
+            .logo {
+                margin-top: 15px;
+                width: 100%;
+                position: relative;
+            }
+
+            .logo>img {
+                margin: 0 auto;
+            }
     </head>
 
 <body>
